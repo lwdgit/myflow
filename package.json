@@ -1,0 +1,42 @@
+{
+  "name": "myflow",
+  "version": "0.0.1",
+  "description": "flow -> flow -> flow ...",
+  "main": "index.js",
+  "dependencies": {
+    "co": "^4.6.0"
+  },
+  "devDependencies": {
+    "bluebird": "^3.4.7",
+    "pre-commit": "^1.2.2",
+    "ava": "^0.18.1"
+  },
+  "pre-commit": {
+    "run": [
+      "test"
+    ]
+  },
+  "scripts": {
+    "test": "ava --fail-fast -s"
+  },
+  "directories": {
+    "example": "example",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lwdgit/myflow.git"
+  },
+  "keywords": [
+    "flow",
+    "co",
+    "workflow",
+    "async"
+  ],
+  "author": "lwdgit",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lwdgit/myflow/issues"
+  },
+  "homepage": "https://github.com/lwdgit/myflow#readme"
+}
