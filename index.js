@@ -1,5 +1,5 @@
 const Flow = require('./lib/flow');
-global.Promise = require('bluebird');
+//global.Promise = require('bluebird');//for debug
 function flow(...tasks) {
     return new Flow(...tasks);
 }
