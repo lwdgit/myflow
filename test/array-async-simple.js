@@ -31,6 +31,6 @@ test('array async', function* (t){
         .pipe(function (...ret) {
             console.log(ret);
             t.deepEqual(ret, [ 1, 2, 3, "done" ]);
-        }).entires();
+        }).all();
         console.log(lst);
 });

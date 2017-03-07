@@ -46,7 +46,7 @@ test('test compose usage', t => {
             console.log('ret', ret);
             t.deepEqual(ret, ['b1', 'd', 'zzzz', [5, 'c'], 'b3']);
         }
-    ).entires().then(function (ret) {
+    ).all().then(function (ret) {
         console.log('done', ret);
         t.deepEqual(ret, ['a', ['b1', 'd', 'zzzz', [5, 'c'], 'b3'], undefined]);
         return flow(
@@ -91,7 +91,7 @@ test('test compose usage', t => {
                 console.log('ret', ret);
                 return;
             }
-        ).entires();
+        ).all();
     }).then(function (res) {
         console.log('done', res);
         t.deepEqual(res, ['a', ['b1', 'd', 'zzzz', [5, 'c'], 'b3'], undefined]);

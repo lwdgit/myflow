@@ -167,10 +167,10 @@ flow().prepend(task0).run();
 flow(...tasks).run();
 ```
 
-### entires
+### all
 启动task, 并收集所有流程的返回值。
 ```
-flow(...tasks).entires();
+flow(...tasks).all();
 ```
 
 ### static spread(args: Array) 静态方法
